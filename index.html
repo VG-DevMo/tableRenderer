@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="htmlTableRenderer.js"></script>
+        <script>
+            window.onload = function(ev) {
+                var data = [
+                    {name: 'grümpel', vorname: 'jonas', alter: '17'},
+                    {name: 'fiederling', vorname: 'markus', alter: '19'}
+                ]
+                tableRenderer.start('_tableContainer', data);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="_tableContainer">
+            <table>
+                <tr><th>Name</th><th>Vorname</th><th>Alter</th></tr>
+                <tr><td>{name}</td><td>{vorname}</td><td>{alter}</td></tr>
+            </table>
+        </div>
+    </body>
+
+</html>
